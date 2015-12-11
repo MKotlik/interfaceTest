@@ -9,6 +9,6 @@ public class Sphere extends Circle implements Volume{
     }
 
     public String toString(){
-	return "FIXME!";
+	return "Sphere "+getName()+" with volume of "+getVolume()+", with cross-area of "+getArea();
     }
 }
