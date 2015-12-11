@@ -1,4 +1,4 @@
-public class Cylinder extends Circle{
+public class Cylinder extends Circle implements Volume{
 
     private double height;
 
@@ -9,6 +9,10 @@ public class Cylinder extends Circle{
 
     public double getHeight(){
 	return height;
+    }
+
+    public double getVolume(){
+	return getArea() * height;
     }
 
     public String toString(){
